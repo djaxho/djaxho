@@ -9,7 +9,7 @@ class Nav extends Component {
             <ul className="header-subnav">
                 {/*<li></li>*/}
                 <li><Link activeClassName='is-active' to='/work'>Work</Link></li>
-                <li><IndexLink activeClassName='is-active' to='/'>About me</IndexLink></li>
+                <li><IndexLink activeClassName='is-active' to='/djaxho'>About me</IndexLink></li>
                 <li><Link activeClassName='is-active' to='/personal'>Personal</Link></li>
                 {/*<li><Link activeClassName='is-active' to={{ pathname: '/address/query', query: { message: 'Hello from Route Query' } }}>Route Query</Link></li>*/}
             </ul>

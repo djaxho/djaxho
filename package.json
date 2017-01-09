@@ -1,13 +1,15 @@
 {
   "name": "djaxho",
   "version": "0.1.0",
+  "homepage": "https://djaxho.github.io/djaxho",
   "private": true,
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-foundation": "^0.7.0",
     "react-router": "^3.0.0",
     "react-simpletabs": "^0.7.0",
@@ -17,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   }
 }

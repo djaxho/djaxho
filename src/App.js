@@ -11,7 +11,7 @@ class App extends Component {
     render () {
         return (
             <Router history={browserHistory}>
-                <Route path='/' component={Layout}>
+                <Route path='/djaxho' component={Layout}>
                     <IndexRoute component={AboutMe} />
                     <Route path='/work' component={Work}>
                         <IndexRoute component={DevWork} />
