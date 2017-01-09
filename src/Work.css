@@ -1,0 +1,21 @@
+.Work .mock-tabs {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d1d1d1;
+}
+.Work .mock-tabs a {
+    border-radius:3px 3px 0 0;
+    padding: 16px 20px;
+    line-height: 49px;
+}
+.Work .mock-tabs a.is-active {
+    border-color: #d1d1d1;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-bottom:1px solid white;
+}
+.Work .media-object img {
+    max-width: 100px;
+}
+.Work .overview {
+    margin-bottom:20px;
+}

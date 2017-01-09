@@ -1,31 +1,91 @@
-.App {
-  text-align: center;
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .Layout-header-content h2 {font-size: 2.25rem;}
+    .Layout-header-content p {font-size: 1.1rem !important;}
+
+    h2 {font-size: 2rem}
 }
 
-.App-logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
-  height: 80px;
-}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
 
-.App-header {
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+
+
+
+.Layout-header {
+  border-bottom:0 !important;
+  padding-left:0 !important;
+  padding-top: 20px !important;
+  padding-right:0 !important;
   background-color: #222;
-  height: 150px;
-  padding: 20px;
-  padding-bottom: 40px;
   color: white;
 }
-
-.App-header h2 {
-  font-size: 1.6rem;
-  margin-top: 10px;
-  margin-bottom: 15px;
+.Layout-header-content {
+  margin-bottom: 20px;
 }
-
-.App-intro {
-  font-size: large;
+.Layout-header-content p {
+    font-size: 1.25rem;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Layout-header-logo {
+  height: 80px;
 }
+.social-button:hover,
+.social-button:focus {
+    border-color: #1779ba !important;
+}
+.social-button:hover i,
+.social-button:focus i {
+    color: #1779ba !important;
+}
+.social-button i {
+    padding-left:8px;
+    padding-right:8px;
+    font-size: 18px;
+    transition: all 0.25s ease-in-out;
+}
+.social-button i:hover {
+    color: #169de1 !important;
+}
+.contact-button {
+    /*background-color: #2C687F;*/
+}
+/*override auto styles on links in callouts*/
+.callout a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.header-subnav {
+  background: #074E68;
+  float: none;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%; }
+.header-subnav li {
+  float: none;
+  display: inline-block; }
+.header-subnav li a {
+  padding: 0.9rem 1rem;
+  font-size: 0.75rem;
+  color: #ffe;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.35s ease-in-out; }
+.header-subnav li a.is-active {
+  background: rgba(250, 250, 250, 0.15); }
+.header-subnav li a:hover {
+  background: rgba(250, 250, 250, 0.15);
+  transition: all 0.35s ease-in-out; }

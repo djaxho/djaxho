@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import Layout from './layouts/Layout';
+import AboutMe from './AboutMe';
+import Work from './Work';
+import DevWork from './DevWork';
+import SciWork from './SciWork';
+import Personal from './Personal';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 
 class App extends Component {
@@ -7,16 +12,17 @@ class App extends Component {
         return (
             <Router history={browserHistory}>
                 <Route path='/' component={Layout}>
-                    <IndexRoute component={Home} />
-                    <Route path='/address' component={Address}>
-                        <IndexRoute component={TwitterFeed} />
-                        <Route path='instagram' component={Instagram} />
+                    <IndexRoute component={AboutMe} />
+                    <Route path='/work' component={Work}>
+                        <IndexRoute component={DevWork} />
+                        <Route path='sci' component={SciWork} />
                         <Route path='query' component={Query} />
                     </Route>
-                    <Route path='/about(/:name)' component={About} />
-                    <Route path='/namedComponent' component={NamedComponents}>
+                    <Route path='/personal' component={Personal} />
+                    {/*<Route path='/about(/:name)' component={About} />*/}
+                   { /*<Route path='/namedComponent' component={NamedComponents}>
                         <IndexRoute components={{ title: Title, subTitle: SubTitle }} />
-                    </Route>
+                    </Route>*/}
                     <Route path='*' component={NotFound} />
                 </Route>
             </Router>
@@ -59,7 +65,11 @@ class NamedComponents extends Component {
 class Home extends Component {
     render() {
         return (
-            <h1>Hello from Home!</h1>
+            <div>
+                <p>
+                    Hi, I am a cool person
+                </p>
+            </div>
         );
     }
 }
