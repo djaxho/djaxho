@@ -39,7 +39,7 @@ class AboutMe extends Component {
                     <div className="small-12 medium-12 large-4 columns">
                         <h3 className="text-center"><i className="fa fa-th"></i> This site</h3>
                         <p>
-                            This site is made with a with React (Javascript) and Foundation CSS, in case you were wondering.
+                            This site is made with React (Javascript), react-router, and Foundation CSS, in case you were wondering.
                             The code is <a href="https://github.com/djaxho/djaxho">available on my github here</a>
                         </p>
                     </div>
